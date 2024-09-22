@@ -24,7 +24,7 @@ const App = () => {
                 data: parsedInput.data 
             };
 
-            const response = await axios.post("https://bajaj-backend-five-eta.vercel.app", dataToSend);
+            const response = await axios.post("https://bajaj-backend-five-eta.vercel.app/bfhl", dataToSend);
             setResponseData(response.data);
         } catch (err) {
             console.error(err);
