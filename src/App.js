@@ -19,12 +19,12 @@ const App = () => {
         try {
             const parsedInput = JSON.parse(jsonInput);
 
-            // Prepare the data to send
+         
             const dataToSend = {
-                data: parsedInput.data // Ensure this matches your expected structure
+                data: parsedInput.data 
             };
 
-            const response = await axios.post("http://localhost:5000/bfhl", dataToSend);
+            const response = await axios.post("https://bajaj-backend-five-eta.vercel.app/bfhl", dataToSend);
             setResponseData(response.data);
         } catch (err) {
             console.error(err);
